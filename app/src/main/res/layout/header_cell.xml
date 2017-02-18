@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/header_cell_avatar_holder_view"
+        android:scaleType="center"
+        android:adjustViewBounds="true"
+        android:src="@drawable/profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:background="@color/hintColorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/header_cell_avatar"
+        android:background="#09FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:id="@+id/header_cell_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Carlos Bedoy"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:id="@+id/header_cell_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="carlos.bedoy@gmail.com"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/profile"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/header_cell_avatar"
+        />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/credit_cell_title"
+        android:padding="16dp"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="@color/hintText"
+        android:text="Make with love in Aguascalientes️"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

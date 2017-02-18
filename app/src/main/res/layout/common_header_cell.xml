@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    android:layout_width="match_parent"
+    android:layout_height="175dp">
+
+    <ImageView
+        android:id="@+id/common_header_cell_overlay"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:background="@color/colorPrimaryAlpha"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/common_header_cell_avatar"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/profile"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Carlos Bedoy"
+        android:textSize="13sp"
+        android:padding="4dp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/common_header_cell_title"
+        android:layout_below="@+id/common_header_cell_avatar"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:padding="4dp"
+        android:textSize="13sp"
+        android:textColor="@color/colorWhite"
+        android:text="carlos.bedoy@gmail.com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/common_header_cell_description"
+        android:layout_below="@+id/common_header_cell_title"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#424685</color>
+    <color name="colorPrimaryDark">#424685</color>
+    <color name="colorAccent">#ff6b72</color>
+    <color name="hintColorAccent">#99ff6b72</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="backgroundColor">#FAFAFA</color>
+    <color name="notificationColor">#CCfc6d71</color>
+    <color name="colorPrimaryAlpha">#F0424685</color>
+    <color name="solid_one">#AAe6d543</color>
+    <color name="solid_two">#AAf57369</color>
+    <color name="solid_three">#AA424685</color>
+    <color name="solid_four">#AA26dde0</color>
+
+    <color name="primaryText">#DD000000</color>
+    <color name="secondaryText">#88000000</color>
+    <color name="hintText">#55000000</color>
+
+    <array name="placeholderColors">
+        <item>@color/solid_one</item>
+        <item>@color/solid_two</item>
+        <item>@color/solid_three</item>
+        <item>@color/solid_four</item>
+    </array>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/backgroundColor"
+    android:layout_height="22dp">
+
+    <TextView
+        android:textColor="@color/hintText"
+        android:text="AMAZING TITLE"
+        android:id="@+id/divider_section_cell_title"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:gravity="center|left"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:background="#F5F5F5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
