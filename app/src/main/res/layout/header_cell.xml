@@ -9,7 +9,7 @@
 
     <ImageView
         android:id="@+id/header_cell_avatar_holder_view"
-        android:scaleType="center"
+        android:scaleType="centerCrop"
         android:adjustViewBounds="true"
         android:src="@drawable/profile"
         android:layout_width="match_parent"

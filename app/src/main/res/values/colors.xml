@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#424685</color>
-    <color name="colorPrimaryDark">#424685</color>
-    <color name="colorAccent">#ff6b72</color>
-    <color name="hintColorAccent">#99ff6b72</color>
+    <color name="colorPrimary">#00DBD4</color>
+    <color name="colorPrimaryDark">#00a8a3</color>
+    <color name="colorAccent">#4D4B62</color>
+    <color name="hintColorAccent">#EE4D4B62</color>
     <color name="colorTransparent">#00000000</color>
     <color name="colorWhite">#FFFFFF</color>
-    <color name="backgroundColor">#FAFAFA</color>
-    <color name="notificationColor">#CCfc6d71</color>
-    <color name="colorPrimaryAlpha">#F0424685</color>
-    <color name="solid_one">#AAe6d543</color>
-    <color name="solid_two">#AAf57369</color>
-    <color name="solid_three">#AA424685</color>
-    <color name="solid_four">#AA26dde0</color>
+    <color name="backgroundColor">#F0F0F0</color>
+    <color name="notificationColor">#3ECF9E</color>
+    <color name="colorPrimaryAlpha">#F000DBD4</color>
+
+    <color name="solid_one">#DD4B4B62</color>
+    <color name="solid_two">#DD3ECF9E</color>
+    <color name="solid_three">#DDF14652</color>
+    <color name="solid_four">#DDFF7546</color>
+    <color name="solid_five">#DDFFDA48</color>
+    <color name="solid_six">#DD00DBD4</color>
 
     <color name="primaryText">#DD000000</color>
     <color name="secondaryText">#88000000</color>
@@ -23,5 +26,7 @@
         <item>@color/solid_two</item>
         <item>@color/solid_three</item>
         <item>@color/solid_four</item>
+        <item>@color/solid_five</item>
+        <item>@color/solid_six</item>
     </array>
 </resources>

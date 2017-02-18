@@ -9,12 +9,13 @@
     <ImageView
         android:id="@+id/common_header_cell_overlay"
         android:scaleType="centerCrop"
+        android:src="@drawable/profile"
         android:adjustViewBounds="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
     <View
-        android:background="@color/colorPrimaryAlpha"
+        android:background="@color/hintColorAccent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

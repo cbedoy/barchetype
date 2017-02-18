@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BArchetype.iml" filepath="$PROJECT_DIR$/BArchetype.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/barchetype.iml" filepath="$PROJECT_DIR$/barchetype.iml" />
     </modules>
   </component>
 </project>

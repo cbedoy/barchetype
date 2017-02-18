@@ -63,6 +63,12 @@ public class User extends BaseCell
         setType(BASE_CELL_TYPE.USER);
     }
 
+    public User(String nickname, String avatar){
+        this();
+        this.nickname = nickname;
+        this.avatar = avatar;
+    }
+
     public void setEmail(String email) {
         this.email = email;
     }

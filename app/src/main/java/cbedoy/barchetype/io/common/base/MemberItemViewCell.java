@@ -13,6 +13,7 @@ import com.bumptech.glide.Glide;
 
 import java.util.List;
 
+import cbedoy.barchetype.R;
 import cbedoy.barchetype.io.common.User;
 
 /**

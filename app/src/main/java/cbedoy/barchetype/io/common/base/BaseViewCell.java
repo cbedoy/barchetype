@@ -18,6 +18,8 @@ import com.bumptech.glide.Glide;
 import java.util.List;
 
 
+import cbedoy.barchetype.R;
+import cbedoy.barchetype.io.common.Value;
 import cbedoy.barchetype.utils.ItemTouchHelperAdapter;
 import cbedoy.barchetype.utils.ItemTouchHelperViewHolder;
 import cbedoy.barchetype.utils.Utils;
@@ -167,6 +169,22 @@ public class BaseViewCell extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
             Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_REGULAR, titleView);
             Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_REGULAR, counterView);
+        }
+    }
+
+
+    private class ValueHolder extends RecyclerView.ViewHolder{
+
+        TextView titleView;
+        TextView valueView;
+        public ValueHolder(View itemView) {
+            super(itemView);
+
+            titleView = (TextView) itemView.findViewById(R.id.common_text_cell_title);
+            valueView = (TextView) itemView.findViewById(R.id.common_text_cell_value);
+
+            Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_REGULAR, titleView);
+            Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_REGULAR, valueView);
         }
     }
 
@@ -371,6 +389,11 @@ public class BaseViewCell extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.members_cell, parent, false);
             return new MembersHolder(view);
         }
+        else if (viewType == BaseCell.BASE_CELL_TYPE.VALUE.getValue())
+        {
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.common_text_cell, parent, false);
+            return new ValueHolder(view);
+        }
         else
         {
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.header_cell, parent, false);
@@ -432,6 +455,15 @@ public class BaseViewCell extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
             counterHolder.titleView.setText(counter.getTitle());
             counterHolder.counterView.setText(String.valueOf(counter.getCount()));
+        }
+        else if (viewType == BaseCell.BASE_CELL_TYPE.VALUE.getValue())
+        {
+            ValueHolder valueHolder = (ValueHolder) holder;
+
+            Value value = (Value) dataModel.get(position);
+
+            valueHolder.titleView.setText(value.getTitle());
+            valueHolder.valueView.setText(String.valueOf(value.getValue()));
         }
         else if(viewType == BaseCell.BASE_CELL_TYPE.DETAIL.getValue())
         {
