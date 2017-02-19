@@ -38,8 +38,7 @@
             android:layout_height="wrap_content"
             android:textColor="#FFFFFF"
             android:text="Carlos Bedoy"
-            android:textSize="14sp"
-            android:textStyle="bold" />
+            android:textSize="14sp" />
 
         <TextView
             android:layout_marginTop="4dp"
@@ -50,8 +49,7 @@
             android:layout_height="wrap_content"
             android:textColor="#FFFFFF"
             android:text="carlos.bedoy@gmail.com"
-            android:textSize="14sp"
-            android:textStyle="normal" />
+            android:textSize="14sp" />
     </LinearLayout>
 
     <de.hdodenhof.circleimageview.CircleImageView

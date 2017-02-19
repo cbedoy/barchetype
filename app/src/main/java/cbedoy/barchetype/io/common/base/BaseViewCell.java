@@ -31,7 +31,7 @@ import cbedoy.barchetype.io.common.Detail;
 import cbedoy.barchetype.io.common.DetailSelector;
 import cbedoy.barchetype.io.common.DividerSectionTitle;
 import cbedoy.barchetype.io.common.Header;
-import cbedoy.barchetype.io.common.Members;
+import cbedoy.barchetype.io.common.Circles;
 import cbedoy.barchetype.io.common.Option;
 import cbedoy.barchetype.io.common.Section;
 import cbedoy.barchetype.io.common.Selector;
@@ -140,7 +140,7 @@ public class BaseViewCell extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
             titleView = (TextView) itemView.findViewById(R.id.credit_cell_title);
 
-            Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_LIGHT, titleView);
+            Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_THIN, titleView);
         }
     }
 
@@ -167,7 +167,7 @@ public class BaseViewCell extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
             titleView = (TextView) itemView.findViewById(R.id.counter_cell_title);
             counterView = (TextView) itemView.findViewById(R.id.counter_cell_value);
 
-            Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_REGULAR, titleView);
+            Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_MEDIUM, titleView);
             Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_REGULAR, counterView);
         }
     }
@@ -183,7 +183,7 @@ public class BaseViewCell extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
             titleView = (TextView) itemView.findViewById(R.id.common_text_cell_title);
             valueView = (TextView) itemView.findViewById(R.id.common_text_cell_value);
 
-            Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_REGULAR, titleView);
+            Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_MEDIUM, titleView);
             Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_REGULAR, valueView);
         }
     }
@@ -197,8 +197,8 @@ public class BaseViewCell extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
             titleView = (TextView) itemView.findViewById(R.id.detail_cell_title);
             descriptionView = (TextView) itemView.findViewById(R.id.detail_cell_description);
 
-            Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_REGULAR, titleView);
-            Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_LIGHT, descriptionView);
+            Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_MEDIUM, titleView);
+            Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_REGULAR, descriptionView);
         }
     }
 
@@ -213,8 +213,8 @@ public class BaseViewCell extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
             descriptionView = (TextView) itemView.findViewById(R.id.detail_selector_cell_description);
             selectorView = (Switch) itemView.findViewById(R.id.detail_selector_cell_selector);
 
-            Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_REGULAR, titleView);
-            Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_LIGHT, descriptionView);
+            Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_MEDIUM, titleView);
+            Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_REGULAR, descriptionView);
         }
     }
 
@@ -254,7 +254,7 @@ public class BaseViewCell extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
             titleView = (TextView) itemView.findViewById(R.id.section_cell_title);
 
-            Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_REGULAR, titleView);
+            Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_BOLD, titleView);
         }
     }
 
@@ -271,7 +271,7 @@ public class BaseViewCell extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
             nicknameView = (TextView) itemView.findViewById(R.id.people_view_cell_username);
             avatarView = (ImageView) itemView.findViewById(R.id.people_view_cell_avatar);
 
-            Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_REGULAR, nicknameView);
+            Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_MEDIUM, nicknameView);
         }
     }
 
@@ -283,7 +283,7 @@ public class BaseViewCell extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
             titleView = (TextView) itemView.findViewById(R.id.divider_section_cell_title);
 
-            Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_REGULAR, titleView);
+            Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_BOLD, titleView);
         }
     }
 
@@ -301,7 +301,7 @@ public class BaseViewCell extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
             avatarView = (ImageView) itemView.findViewById(R.id.common_header_cell_avatar);
             holderView = (ImageView) itemView.findViewById(R.id.common_header_cell_overlay);
 
-            Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_REGULAR, titleView);
+            Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_MEDIUM, titleView);
             Utils.setTypefaceOnView(Utils.TYPEFACE.ROBOTO_REGULAR, descriptionView);
         }
     }
@@ -372,7 +372,7 @@ public class BaseViewCell extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.button_cell, parent, false);
             return new ButtonHolder(view);
         }
-        else if (viewType == BaseCell.BASE_CELL_TYPE.USER.getValue())
+        else if (viewType == BaseCell.BASE_CELL_TYPE.CIRCLE.getValue())
         {
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.people_cell, parent, false);
             return new PeopleHolder(view);
@@ -520,7 +520,7 @@ public class BaseViewCell extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
             Drawable drawable = context.getResources().getDrawable(R.drawable.button_background);
             drawable.setColorFilter(button.getColor(), PorterDuff.Mode.MULTIPLY);
         }
-        else if (viewType == BaseCell.BASE_CELL_TYPE.USER.getValue())
+        else if (viewType == BaseCell.BASE_CELL_TYPE.CIRCLE.getValue())
         {
             PeopleHolder peopleHolder = (PeopleHolder) holder;
 
@@ -563,13 +563,13 @@ public class BaseViewCell extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
         {
             MembersHolder membersHolder = (MembersHolder) holder;
 
-            Members members = (Members) dataModel.get(position);
+            Circles circles = (Circles) dataModel.get(position);
 
             MemberItemViewCell viewCell = new MemberItemViewCell();
             viewCell.setContext(context);
-            viewCell.setUsers(members.getUsers());
+            viewCell.setCircles(circles.getCircles());
 
-            membersHolder.recyclerView.setLayoutManager(new GridLayoutManager(context, 5));
+            membersHolder.recyclerView.setLayoutManager(new GridLayoutManager(context, 4));
             membersHolder.recyclerView.setAdapter(viewCell);
         }
 

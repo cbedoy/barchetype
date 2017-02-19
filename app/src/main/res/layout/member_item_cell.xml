@@ -9,10 +9,9 @@
         android:layout_width="match_parent"
         android:text="Alejandra Oregel"
         android:gravity="center"
-        android:textSize="10sp"
+        android:textSize="12sp"
         android:maxLines="2"
         android:layout_gravity="center"
-        android:textStyle="normal"
         android:textColor="@color/secondaryText"
         android:padding="4dp"
         android:layout_height="wrap_content"
@@ -23,15 +22,15 @@
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/member_item_cell_avatar"
         android:src="@drawable/group_one"
-        android:layout_width="48dp"
+        android:layout_width="60dp"
         android:layout_marginTop="8dp"
-        android:layout_height="48dp"
+        android:layout_height="60dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
     <ImageView
         android:id="@+id/member_item_cell_power"
-        android:src="@drawable/admin_icon"
+        android:src="@drawable/favorite_icon"
         android:layout_width="18dp"
         android:layout_height="18dp"
         android:layout_above="@+id/member_item_cell_title"

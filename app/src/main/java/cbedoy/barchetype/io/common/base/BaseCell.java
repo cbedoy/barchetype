@@ -29,7 +29,7 @@ public class BaseCell
         VALUE(10),
         BUTTON(11),
         SINGLE(12),
-        USER(13),
+        CIRCLE(13),
         DIVIDER_SECTION_TITLE(14),
         COMMON_HEADER(15),
         MEMBERS(16);

@@ -60,7 +60,7 @@ public class User extends BaseCell
     }
 
     public User(){
-        setType(BASE_CELL_TYPE.USER);
+        setType(BASE_CELL_TYPE.CIRCLE);
     }
 
     public User(String nickname, String avatar){
